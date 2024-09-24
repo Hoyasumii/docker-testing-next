@@ -1,0 +1,9 @@
+services:
+  website:
+    container_name: website
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports: 
+      - 3002:3000
